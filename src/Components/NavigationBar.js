@@ -7,8 +7,7 @@ class NavigationBar extends React.Component {
         super(props);
             
         this.state = {
-            header: "Header from state...",
-            content: "Content from state..."
+            
         }
     }
 
