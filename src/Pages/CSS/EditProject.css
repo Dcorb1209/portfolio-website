@@ -1,0 +1,27 @@
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    flex-grow: .18;
+    justify-content: space-between;
+    padding: 15px;
+    border-color: lightgray;
+    border-width: 1px;
+    border-right-style: solid;
+}
+
+.add-button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.save-button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
