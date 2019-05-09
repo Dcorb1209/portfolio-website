@@ -3,7 +3,7 @@
     flex-direction: column;
     flex-grow: .18;
     justify-content: space-between;
-    padding: 15px;
+    padding: 30px;
     border-color: lightgray;
     border-width: 1px;
     border-right-style: solid;
@@ -12,7 +12,7 @@
 .add-button {
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .save-button {
