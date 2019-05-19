@@ -1,27 +1,32 @@
 import React from 'react';
-import {Card, Button} from 'react-bootstrap';
+import { Card, Button} from 'react-bootstrap';
+
+import MyModal from './MyModal';
+import './CSS/ProjectCard.css';
 
 class ProjectCard extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {};
-
+        this.state = { modalShow: false };
     }
 
     render() {
+        let modalClose = () => this.setState({ modalShow: false });
+
         return (
             <div>
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '18rem' }} >
                 <Card.Img variant="top" src="" />
                 <Card.Body>
                     <Card.Title>Project Title</Card.Title>
                     <Card.Text>
-                        Description
+                        Short Project Description
                     </Card.Text>
-                    <Button variant="primary">View</Button>
+                    <Button variant="primary" onClick={() => this.setState({ modalShow: true })}>More Info</Button>
                 </Card.Body>
-            </Card>;
+            </Card>
+            <MyModal show={this.state.modalShow} onHide={modalClose}></MyModal>
             </div>
         );
     }
