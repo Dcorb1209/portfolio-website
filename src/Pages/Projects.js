@@ -18,13 +18,13 @@ class Projects extends React.Component {
                 <Container>
                     <Row>
                         <Col>
-                            <ProjectCard/>
+                            <ProjectCard title="Dynamic Title 1"/>
                         </Col>
                         <Col>
-                            <ProjectCard/>
+                            <ProjectCard title="Dynamic Title 2"/>
                         </Col>
                         <Col>
-                            <ProjectCard/>
+                            <ProjectCard title="Dynamic Title 3"/>
                         </Col>
                     </Row>
                 </Container>
