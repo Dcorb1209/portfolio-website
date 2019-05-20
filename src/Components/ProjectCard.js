@@ -19,14 +19,14 @@ class ProjectCard extends React.Component {
             <Card style={{ width: '18rem' }} >
                 <Card.Img variant="top" src="" />
                 <Card.Body>
-                    <Card.Title>Project Title</Card.Title>
+                    <Card.Title>{this.props.title}</Card.Title>
                     <Card.Text>
                         Short Project Description
                     </Card.Text>
                     <Button variant="primary" onClick={() => this.setState({ modalShow: true })}>More Info</Button>
                 </Card.Body>
             </Card>
-            <MyModal show={this.state.modalShow} onHide={modalClose}></MyModal>
+            <MyModal projectTitle={this.props.title} show={this.state.modalShow} onHide={modalClose}></MyModal>
             </div>
         );
     }
